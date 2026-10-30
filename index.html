@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skinny cossy | Skincare, Perfume and Hair Care</title>
+<meta name="description" content="Shop a hydrating moisturizer, Bleu de Chanel perfume and Dabur Amla hair oil at Skinny cossy. Only ₦2,000 each. Order on WhatsApp.">
+<meta name="theme-color" content="#E0457B">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='30' fill='%23E0457B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+<section class="hero" id="home">
+ <div class="wrap hero-grid">
+  <div>
+   <h1>Glowing skin and healthy hair, made simple.</h1>
+   <p>Skinny cossy brings you a hydrating moisturizer, a signature perfume and a nourishing hair oil. Every product is just ₦2,000.</p>
+   <div class="btns">
+    <a class="btn rose" href="#products">Shop now</a>
+    <a class="btn ghost" href="about.html">About us</a>
+   </div>
+   <div class="perks">
+    <span>Order in minutes on WhatsApp</span>
+    <span>Ask us about delivery to your area</span>
+    <span>Real people reply fast</span>
+   </div>
+  </div>
+  <div class="stack">
+   <img src="assets/moisturizer.jpg" alt="Neutrogena Hydro Boost Water Gel moisturizer" width="259" height="340">
+   <img src="assets/perfume.jpg" alt="Bleu de Chanel Eau de Parfum" width="260" height="340">
+   <img src="assets/hair-oil.jpg" alt="Dabur Amla Hair Oil" width="259" height="340">
+  </div>
+ </div>
+</section>
+
+<section id="products">
+ <div class="wrap">
+  <div class="center">
+   <h2>Shop our favourites</h2>
+   <p class="sub">Three products people keep coming back for. Add them to your cart and order on WhatsApp.</p>
+  </div>
+  <div class="grid" id="grid"></div>
+  <div class="bundle">
+   <div>
+    <h3>Get all three for ₦5,500</h3>
+    <p>Add the moisturizer, perfume and hair oil together and save ₦500.</p>
+   </div>
+   <button class="btn" type="button" data-bundle>Add all three</button>
+  </div>
+ </div>
+</section>
+
+<section class="soft" id="reviews">
+ <div class="wrap">
+  <div class="center">
+   <h2>Loved by our customers</h2>
+   <p class="sub" id="avg"></p>
+  </div>
+  <div class="reviews" id="reviewList"></div>
+ </div>
+</section>
+
+<section id="feedback">
+ <div class="wrap two">
+  <div>
+   <h2>Tell us how we did</h2>
+   <p class="sub">Your feedback helps us pick better products and serve you better. Share a review or a suggestion, it takes a minute.</p>
+  </div>
+  <form id="fb" aria-label="Feedback form">
+   <label>Your name<input id="fn" required autocomplete="name"></label>
+   <label>Your rating
+    <select id="fr">
+     <option value="5">5 stars, loved it</option>
+     <option value="4">4 stars, really good</option>
+     <option value="3">3 stars, it was okay</option>
+     <option value="2">2 stars, could be better</option>
+     <option value="1">1 star, not happy</option>
+    </select>
+   </label>
+   <label>Your feedback<textarea id="fm" required></textarea></label>
+   <button class="btn rose" type="submit">Send feedback</button>
+   <p class="note" id="fdone" role="status">Your feedback opens in WhatsApp so it reaches us right away.</p>
+  </form>
+ </div>
+</section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
